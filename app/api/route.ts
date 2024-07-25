@@ -35,11 +35,11 @@ export async function POST(request: Request) {
 	);
 
 	const completion = await groq.chat.completions.create({
-		model: "llama3-8b-8192",
+		model: "llama-3.1-70b-versatile",
 		messages: [
 			{
 				role: "system",
-				content: `- You are Swift, a friendly and helpful voice assistant.
+				content: `- You are Swift, a point-blank and honest voice assistant. You push back when necessary.
 			- Respond briefly to the user's request, and do not provide unnecessary information.
 			- If you don't understand the user's request, ask for clarification.
 			- You do not have access to up-to-date information, so you should not provide real-time data.
@@ -80,7 +80,14 @@ export async function POST(request: Request) {
 			transcript: response,
 			voice: {
 				mode: "id",
-				id: "79a125e8-cd45-4c13-8a67-188112f4dd22",
+				id: "95856005-0332-41b0-935f-352e296aa0df",
+				"__experimental_controls": {
+    				"speed": "fast",
+    				"emotion": [
+      				"positivity:high",
+      				"curiosity"
+   					]
+  				}
 			},
 			output_format: {
 				container: "raw",
