@@ -80,11 +80,11 @@ export async function POST(request: Request) {
 			transcript: response,
 			voice: {
 				mode: "id",
-				id: "95856005-0332-41b0-935f-352e296aa0df",
+				id: "79a125e8-cd45-4c13-8a67-188112f4dd22",
 				"__experimental_controls": {
     				"speed": "fast",
     				"emotion": [
-      				"positivity:high",
+      				"positivity",
       				"curiosity"
    					]
   				}
