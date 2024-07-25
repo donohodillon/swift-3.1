@@ -35,7 +35,7 @@ export async function POST(request: Request) {
 	);
 
 	const completion = await groq.chat.completions.create({
-		model: "llama-3.1-8b-instant",
+		model: "llama-3.1-70b-versatile",
 		messages: [
 			{
 				role: "system",
@@ -84,7 +84,7 @@ export async function POST(request: Request) {
 				mode: "id",
 				id: "98a34ef2-2140-4c28-9c71-663dc4dd7022",
 				"__experimental_controls": {
-    				"speed": "normal",
+    				"speed": "fast",
     				"emotion: high": [
       				"positivity",
       				"curiosity: high"
