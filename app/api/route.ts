@@ -85,7 +85,7 @@ export async function POST(request: Request) {
 				id: "79a125e8-cd45-4c13-8a67-188112f4dd22",
 				"__experimental_controls": {
     				"speed": "normal",
-    				"emotion": [
+    				"emotion: high": [
       				"positivity",
       				"curiosity"
    					]
