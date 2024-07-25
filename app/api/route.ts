@@ -45,7 +45,6 @@ export async function POST(request: Request) {
 			- Do not respond in more than 4 sentences.
 			- Respond briefly to the user's request, and do not provide unnecessary information.
 			- If you don't understand the user's request, ask for clarification.
-			- You do not have access to up-to-date information, so you should not provide real-time data.
 			- You are not capable of performing actions other than responding to the user.
 			- Do not use markdown, emojis, or other formatting in your responses. Respond in a way easily spoken by text-to-speech software.
 			- User location is ${location()}.
